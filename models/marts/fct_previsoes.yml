@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: fct_previsoes
+    description: Tabela com os fatos de previsões
+    columns:
+      - name: sk_time
+      - name: chegar_na_oitava_de_finais
+      - name: chegar_na_quarta_de_finais
+      - name: chegar_na_semi_final 
+      - name: chegar_na_final 
+      - name: vencer_liga
+      
