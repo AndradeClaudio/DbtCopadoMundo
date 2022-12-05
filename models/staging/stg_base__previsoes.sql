@@ -3,7 +3,7 @@ with
     (
     select  cast (TIMESTAMP(forecast_timestamp) as datetime) as hora_previsao
             , cast (team as string) as time
-            , cast (group as string) as grupo
+            , cast (a.group as string) as grupo
             , cast (spi as numeric) as spi 
             , cast (global_o as numeric) as global_o
             , cast (global_d  as numeric) as globa_d
@@ -23,7 +23,7 @@ with
             , cast (make_final as numeric) as chegar_na_final
             , cast (win_league as numeric) as vencer_liga
             --, cast (timestamp as date) as hora_atualizacao
-    from {{source('base','wc_forecasts')}}
+    from {{source('base','wc_forecasts')}} a
     )
 
 select * 
