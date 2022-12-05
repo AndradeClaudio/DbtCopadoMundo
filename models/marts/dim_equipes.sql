@@ -1,15 +1,15 @@
 WITH
-    TIMES AS (
+    EQUIPES AS (
         SELECT DISTINCT TIME, GRUPO
         FROM {{ ref('stg_base__previsoes') }}
     )
 
     , TRANSFORMED AS (
         SELECT
-            ROW_NUMBER() OVER (ORDER BY TIME) AS SK_TIME
-            , TIME
+            ROW_NUMBER() OVER (ORDER BY EQUIPE) AS SK_EQUIPE
+            , EQUIPE
             , GRUPO
-        FROM TIMES
+        FROM EQUIPES
     )
 
 SELECT *

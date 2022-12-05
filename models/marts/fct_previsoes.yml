@@ -4,7 +4,8 @@ models:
   - name: FCT_PREVISOES
     description: Tabela com os fatos de previsões
     columns:
-      - name: SK_TIME
+      - name: SK_EQUIPE
+      - name: DATA_PREVISAO
       - name: CHEGAR_NA_OITAVA_DE_FINAIS
       - name: CHEGAR_NA_QUARTA_DE_FINAIS
       - name: CHEGAR_NA_SEMI_FINAL 
