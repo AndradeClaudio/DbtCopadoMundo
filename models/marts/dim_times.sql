@@ -1,16 +1,16 @@
-with
-    times as (
-        select DISTINCT time, grupo
-        from {{ ref('stg_base__previsoes') }}
+WITH
+    TIMES AS (
+        SELECT DISTINCT TIME, GRUPO
+        FROM {{ REF('STG_BASE__PREVISOES') }}
     )
 
-    , transformed as (
-        select
-            row_number() over (order by time) as sk_time
-            , time
-            , grupo
-        from times
+    , TRANSFORMED AS (
+        SELECT
+            ROW_NUMBER() OVER (ORDER BY TIME) AS SK_TIME
+            , TIME
+            , GRUPO
+        FROM TIMES
     )
 
-select *
-from transformed
+SELECT *
+FROM TRANSFORMED
