@@ -1,7 +1,7 @@
 with 
     source_wc_forecasts as 
     (
-    select  cast (TIMESTAMP(timeforecast_timestamp) as datetime) as hora_previsao
+    select  cast (TIMESTAMP(forecast_timestamp) as datetime) as hora_previsao
             , cast (team as string) as time
             , cast ('group' as string) as grupo
             , cast (spi as numeric) as spi 
