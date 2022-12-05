@@ -1,6 +1,6 @@
 WITH
     EQUIPES AS (
-        SELECT DISTINCT TIME, GRUPO
+        SELECT DISTINCT EQUIPE, GRUPO
         FROM {{ ref('stg_base__previsoes') }}
     )
 
