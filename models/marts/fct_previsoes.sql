@@ -1,5 +1,5 @@
 WITH 
-    TIMES AS (
+    EQUIPES AS (
         SELECT *
             FROM {{ref('dim_equipes')}}
         )
