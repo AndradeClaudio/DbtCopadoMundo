@@ -10,7 +10,7 @@ WITH
                 , chegar_na_semi_final 
                 , chegar_na_final 
                 , vencer_liga 
-            FROM {{ref('stg_base__previsoes.sql')}} 
+            FROM {{ref('stg_base__previsoes')}} 
         )
 
 SELECT  DT.sk_time  AS sk_time
