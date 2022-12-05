@@ -13,24 +13,24 @@ sources:
             tests:
               - unique
               - not_null
-        - name: team
-        - name: group
-        - name: spi
-        - name: global_o
-        - name: global_d
-        - name: sim_wins
-        - name: sim_ties
-        - name: sim_losses
-        - name: sim_goal_diff
-        - name: goals_scored
-        - name: goals_against
-        - name: group_1
-        - name: group_2
-        - name: group_3
-        - name: group_4
-        - name: make_round_of_16
-        - name: make_quarters
-        - name: make_semis
-        - name: make_final
-        - name: win_league
-        - name: timestamp
+          - name: team
+          - name: group
+          - name: spi
+          - name: global_o
+          - name: global_d
+          - name: sim_wins
+          - name: sim_ties
+          - name: sim_losses
+          - name: sim_goal_diff
+          - name: goals_scored
+          - name: goals_against
+          - name: group_1
+          - name: group_2
+          - name: group_3
+          - name: group_4
+          - name: make_round_of_16
+          - name: make_quarters
+          - name: make_semis
+          - name: make_final
+          - name: win_league
+          - name: timestamp
