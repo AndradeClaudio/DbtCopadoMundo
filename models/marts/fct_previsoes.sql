@@ -4,7 +4,7 @@ WITH
             FROM {{ref('dim_times')}}
         )
     , PREVISOES AS 
-        (SELECT 
+        (SELECT  TIME
                 , chegar_na_oitava_de_finais 
                 , chegar_na_quarta_de_finais 
                 , chegar_na_semi_final 
