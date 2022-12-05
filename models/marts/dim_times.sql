@@ -1,7 +1,7 @@
 WITH
     TIMES AS (
         SELECT DISTINCT TIME, GRUPO
-        FROM {{ REF('STG_BASE__PREVISOES') }}
+        FROM {{ ref('STG_BASE__PREVISOES') }}
     )
 
     , TRANSFORMED AS (

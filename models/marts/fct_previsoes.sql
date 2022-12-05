@@ -1,7 +1,7 @@
 WITH 
     TIMES AS (
         SELECT *
-            FROM {{REF('DIM_TIMES')}}
+            FROM {{ref('DIM_TIMES')}}
         )
     , PREVISOES AS 
         (SELECT  TIME
@@ -11,7 +11,7 @@ WITH
                 , CHEGAR_NA_SEMI_FINAL 
                 , CHEGAR_NA_FINAL 
                 , VENCER_LIGA 
-            FROM {{REF('STG_BASE__PREVISOES')}} 
+            FROM {{ref('STG_BASE__PREVISOES')}} 
         )
 
 SELECT  DT.SK_TIME  AS SK_TIME
