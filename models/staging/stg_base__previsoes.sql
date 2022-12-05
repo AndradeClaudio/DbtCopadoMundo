@@ -3,7 +3,7 @@ with
     (
     select  cast (TIMESTAMP(forecast_timestamp) as datetime) as hora_previsao
             , cast (team as string) as time
-            , cast ("group" as string) as grupo
+            , cast (group as string) as grupo
             , cast (spi as numeric) as spi 
             , cast (global_o as numeric) as global_o
             , cast (global_d  as numeric) as globa_d
