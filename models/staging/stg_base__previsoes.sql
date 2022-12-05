@@ -23,9 +23,10 @@ WITH
             , CAST (MAKE_FINAL AS NUMERIC) AS CHEGAR_NA_FINAL
             , CAST (WIN_LEAGUE AS NUMERIC) AS VENCER_LIGA
             --, CAST (TIMESTAMP AS DATE) AS HORA_ATUALIZACAO
-    FROM {{source('base','WC_FORECASTS')}} A
+    FROM {{source('base','wc_forecasts')}} A
     )
 
 SELECT * 
 FROM SOURCE_WC_FORECASTS
+
 

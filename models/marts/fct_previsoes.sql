@@ -1,7 +1,7 @@
 WITH 
     TIMES AS (
         SELECT *
-            FROM {{ref('DIM_TIMES')}}
+            FROM {{ref('dim_times')}}
         )
     , PREVISOES AS 
         (SELECT  TIME
@@ -11,7 +11,7 @@ WITH
                 , CHEGAR_NA_SEMI_FINAL 
                 , CHEGAR_NA_FINAL 
                 , VENCER_LIGA 
-            FROM {{ref('STG_BASE__PREVISOES')}} 
+            FROM {{ref('stg_base__previsoes')}} 
         )
 
 SELECT  DT.SK_TIME  AS SK_TIME
@@ -22,3 +22,5 @@ SELECT  DT.SK_TIME  AS SK_TIME
     , VENCER_LIGA 
     FROM PREVISOES STG
     INNER JOIN TIMES DT ON DT.TIME=STG.TIME
+
+    
